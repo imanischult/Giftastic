@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Giphtastic App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+            <div class="container">
+              <h1>Summer Time!</h1>
+
+              <p>It's almost summer time! Click a button below to see some summertime GIFs!</p>
+          
+              <!-- Rendered Buttons will get Dumped Here  -->
+              <div id="buttons-view"></div>
+              <br>
+              <p>Don't see one that fits your fancy? Add one!</p>
+                
+              <form id="giphy-form">
+                <label for="giphy-input">Add a summer time fav!</label>
+                <input type="text" id="giphy-input">
+                <br>
+          
+                <!-- Button triggers new movie to be added -->
+                <input id="add-summerGif" type="submit" value="Add Summer Fav">
+              </form>
+          
+              <!-- SummerGIFs will Get Dumped Here -->
+              <div id="summerGIF-view">
+              </div>
+   
+
+
+
+</body>
+<script src="assets/javascript/app.js"></script>
+</html>
