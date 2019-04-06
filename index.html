@@ -5,35 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Giphtastic App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <!--This is for the h1 animation-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!--This is for the font-->
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 </head>
 
 <body>
 
-
-            <div class="container">
-              <h1>Summer Time!</h1>
-
-              <p>It's almost summer time! Click a button below to see some summertime GIFs!</p>
-          
-              <!-- Rendered Buttons will get Dumped Here  -->
-              <div id="buttons-view"></div>
-              <br>
-              <p>Don't see one that fits your fancy? Add one!</p>
-                
-              <form id="giphy-form">
-                <label for="giphy-input">Add a summer time fav!</label>
-                <input type="text" id="giphy-input">
-                <br>
-          
-                <!-- Button triggers new movie to be added -->
-                <input id="add-summerGif" type="submit" value="Add Summer Fav">
-              </form>
-          
-              <!-- SummerGIFs will Get Dumped Here -->
-              <div id="summerGIF-view">
-              </div>
+<div class="container">
+    <!-- This h1 is for the animation title-->
+    <h1 class="ml1">
+        <span class="text-wrapper">
+            <span class="line line1"></span>
+            <span class="letters">Summer is Almost Here!</span>
+            <span class="line line2"></span>
+        </span>
+    </h1>
+    <!-- This displays the text before array of buttons-->
+    <div class = "display-button-content">
+        <p>It's almost summer time! Click a button below to see some summertime GIFs!</p>
+    
+        <!-- Rendered Buttons will get Dumped Here  -->
+        <div id="buttons-view"></div>
+        <br>
+    </div>
+        <br>
+    <div class="add-button-content">
+        <p><strong>Don't see one that fits your fancy?</strong> Add one!</p>
+    
+        <form id="giphy-form">
+        <label class = "text" for="giphy-input">Add a summer time fav!</label>
+        <input type="text" id="giphy-input">
+        <br>
+    
+        <!-- Button triggers new movie to be added -->
+        <input id="add-summerGif" type="submit" value="Add Summer Fav">
+        </form>
+    </div>
+    
+    <!--This is where GIFs will be displayed-->
+    <div class = 'row'>
+        <div class ="display-GIF-content">
+            <!-- SummerGIFs will Get Dumped Here -->
+            <div id="summerGIF-view"></div>
+        </div>
+    </div>
+</div>
    
 
 
