@@ -42,7 +42,7 @@ function renderSummerBtn() {
 function displayGif() {
 
     const gif = $(this).attr('data-name');
-    const queryURL = 'http://api.giphy.com/v1/gifs/search?q=' + gif + '&api_key=' + key + '&limit=10';
+    const queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + gif + '&api_key=' + key + '&limit=10';
 
     // This is the standard ajax syntax to perform the GET request to the Giphy API //
     $.ajax({
