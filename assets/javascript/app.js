@@ -97,6 +97,7 @@ function displayGif() {
 
             gifDiv.prepend(displaySummerRating);
             gifDiv.prepend(summerGifImg);
+            gifDiv.addClass('col-md-3');
 
 
             $('#summerGIF-view').prepend(gifDiv);
