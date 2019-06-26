@@ -14,3 +14,5 @@ This data is provided by the GIPHY API.
 
 
 This page also includes a form that takes the value from a user input box and adds it the array of buttons on the webpage.
+
+Visit my deployed link here: https://imanischult.github.io/Giftastic/
